@@ -23,13 +23,4 @@ public class CustomRepositoryRestConfigurerAdapter extends RepositoryRestConfigu
     	validatingListener.addValidator("beforeSave", validator());
     }
     
-//    @Bean
-//    public ValidatingMongoEventListener validatingMongoEventListener() {
-//        return new ValidatingMongoEventListener(validator());
-//    }
-
-//    @Bean
-//    public LocalValidatorFactoryBean validator() {
-//        return new LocalValidatorFactoryBean();
-//    }
 }

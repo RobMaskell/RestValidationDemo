@@ -19,11 +19,9 @@ import lombok.Setter;
 import lombok.ToString;
 
 @Document
-//@Entity
 @Getter
 @Setter
 @ToString(includeFieldNames=true)
-//@RequiredArgsConstructor
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode
@@ -33,7 +31,6 @@ public class Idea implements Serializable {
 	private static final long serialVersionUID = 3430100961796691437L;
 
 	@Id
-	//@GeneratedValue(strategy=GenerationType.AUTO)
 	private BigInteger id;
 	
 	@NotEmpty
